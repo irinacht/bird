@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f0f8f7;
+    color: #333;
+}
+
+header {
+    position: relative; /* Needed for absolute positioning inside header */
+    background-color: #aadcd6;
+    padding: 2rem;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    margin-top: 1rem;
+}
+
+.gallery-link {
+    display: inline-block;
+    margin-top: 1rem;
+    color: #007b5e;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.gallery-link:hover {
+    text-decoration: underline;
+}
+
+/* NEW: Top-right signup/order links */
+.top-right-links {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.top-right-links a {
+    margin-left: 1rem;
+    text-decoration: none;
+    color: #004f47;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.top-right-links a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 2rem;
+    max-width: 900px;
+    margin: auto;
+}
+
+.gallery .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.about, .contact {
+    background-color: #e6f4f1;
+    margin-top: 2rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: #aadcd6;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
